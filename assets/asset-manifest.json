@@ -1,36 +1,41 @@
 {
-  "productionAssetsNeeded": [
+  "productionAssetsAvailable": [
     {
-      "path": "assets/team-mac-attack-logo.png",
+      "path": "assets/team-mac-attack-logo.svg",
       "purpose": "Reusable Team Mac Attack logo for header/footer",
-      "status": "needed"
+      "status": "available",
+      "source": "derived from the landing-page mock-up"
     },
     {
-      "path": "assets/hero-eagles-block-pool.png",
+      "path": "assets/hero-eagles-block-pool.svg",
       "purpose": "Hero graphic for the right side of the landing page",
-      "status": "needed"
+      "status": "available",
+      "source": "derived from the landing-page mock-up"
     },
     {
-      "path": "assets/team-mac-attack-photo.jpg",
+      "path": "assets/team-mac-attack-photo.svg",
       "purpose": "Support-the-cause section image",
-      "status": "needed"
+      "status": "available",
+      "source": "derived from the landing-page mock-up"
     },
     {
       "path": "assets/venmo-icon.svg",
-      "purpose": "Optional Venmo icon if exact branding is needed",
-      "status": "optional"
+      "purpose": "Venmo-style payment icon",
+      "status": "available",
+      "source": "simple SVG icon"
     }
   ],
   "designReferencesNeeded": [
     {
       "path": "design/mockups/landing-page-reference.png",
       "purpose": "Full-page visual reference for Codex",
-      "status": "needed"
+      "status": "still needed if Codex needs exact full-page comparison"
     }
   ],
   "implementationNotes": [
     "Do not use the landing-page mock-up as a full-page image in production.",
     "Render the block pool as HTML from data/current-pool.csv or a future JSON data source.",
-    "Use semantic HTML, responsive CSS, and reusable components."
+    "Use semantic HTML, responsive CSS, and reusable components.",
+    "The current assets are derived from the flattened mock-up and are good enough for layout build-out, but original source assets should replace them before production if higher quality is available."
   ]
 }
