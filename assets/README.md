@@ -5,7 +5,7 @@ Production images and reusable static assets go here.
 Current available assets:
 
 - `team-mac-attack-logo.svg` — reusable Team Mac Attack logo for the header/footer.
-- `hero-eagles-block-pool.svg` — hero graphic for the landing page.
+- `hero-eagles-block-pool.png` — right-side hero art for the landing page.
 - `team-mac-attack-photo.svg` — support-the-cause section image.
 - `venmo-icon.svg` — Venmo-style payment icon.
 
