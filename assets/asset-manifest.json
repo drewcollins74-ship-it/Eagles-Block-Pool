@@ -1,0 +1,36 @@
+{
+  "productionAssetsNeeded": [
+    {
+      "path": "assets/team-mac-attack-logo.png",
+      "purpose": "Reusable Team Mac Attack logo for header/footer",
+      "status": "needed"
+    },
+    {
+      "path": "assets/hero-eagles-block-pool.png",
+      "purpose": "Hero graphic for the right side of the landing page",
+      "status": "needed"
+    },
+    {
+      "path": "assets/team-mac-attack-photo.jpg",
+      "purpose": "Support-the-cause section image",
+      "status": "needed"
+    },
+    {
+      "path": "assets/venmo-icon.svg",
+      "purpose": "Optional Venmo icon if exact branding is needed",
+      "status": "optional"
+    }
+  ],
+  "designReferencesNeeded": [
+    {
+      "path": "design/mockups/landing-page-reference.png",
+      "purpose": "Full-page visual reference for Codex",
+      "status": "needed"
+    }
+  ],
+  "implementationNotes": [
+    "Do not use the landing-page mock-up as a full-page image in production.",
+    "Render the block pool as HTML from data/current-pool.csv or a future JSON data source.",
+    "Use semantic HTML, responsive CSS, and reusable components."
+  ]
+}
