@@ -1,7 +1,7 @@
 {
   "productionAssetsAvailable": [
     {
-      "path": "assets/team-mac-attack-logo.svg",
+      "path": "assets/team-mac-attack-logo.png",
       "purpose": "Reusable Team Mac Attack logo for header/footer",
       "status": "available",
       "source": "derived from the landing-page mock-up"
