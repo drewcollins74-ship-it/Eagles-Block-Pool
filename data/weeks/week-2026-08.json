@@ -1,0 +1,35 @@
+{
+  "week": 8,
+  "opponent": "Washington Commanders",
+  "opponent_short": "Commanders",
+  "opponent_abbreviation": "WAS",
+  "game_date": "2026-11-01T20:20:00-05:00",
+  "location": "Northwest Stadium",
+  "eagles_digits": [
+    0,
+    1,
+    9,
+    2,
+    8,
+    6,
+    5,
+    3,
+    4,
+    7
+  ],
+  "opponent_digits": [
+    8,
+    4,
+    1,
+    0,
+    3,
+    5,
+    7,
+    6,
+    2,
+    9
+  ],
+  "digits_generated_at": "2026-06-30T14:00:00.000Z",
+  "pool_file": "/data/pools/pool-2026-08.csv",
+  "score_source_id": "2026-W08-PHI-WAS"
+}

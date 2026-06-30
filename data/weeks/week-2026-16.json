@@ -1,0 +1,35 @@
+{
+  "week": 16,
+  "opponent": "Houston Texans",
+  "opponent_short": "Texans",
+  "opponent_abbreviation": "HOU",
+  "game_date": "2026-12-24T20:15:00-05:00",
+  "location": "Lincoln Financial Field",
+  "eagles_digits": [
+    4,
+    9,
+    7,
+    8,
+    1,
+    2,
+    3,
+    0,
+    5,
+    6
+  ],
+  "opponent_digits": [
+    2,
+    1,
+    4,
+    3,
+    5,
+    7,
+    0,
+    9,
+    6,
+    8
+  ],
+  "digits_generated_at": "2026-06-30T14:00:00.000Z",
+  "pool_file": "/data/pools/pool-2026-16.csv",
+  "score_source_id": "2026-W16-PHI-HOU"
+}

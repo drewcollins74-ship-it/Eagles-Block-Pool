@@ -25,9 +25,9 @@ Then open `http://localhost:4173/weekly-pool`.
 
 ### Weekly data
 
-- `data/pools/pool-2025-01.csv` is the saved 100-square board for Week 1.
-- `data/weeks/index.json` lists every available week and drives archive navigation.
-- `data/weeks/week-2025-01.json` contains the matchup, saved digit order, pool path, and score lookup ID.
+- `data/pools/` contains a saved 100-square board for every game week.
+- `data/weeks/index.json` lists the 2025 and 2026 seasons and drives archive navigation.
+- `data/weeks/week-2026-01.json` contains the matchup, saved digit order, pool path, and score lookup ID for the 2026 opener.
 - `data/nfl-scores-test.json` is the replaceable local score source.
 - `data/teams.json` is the 32-team lookup keyed by NFL abbreviation.
 - `assets/teams/` contains lowercase abbreviation SVGs referenced by the team catalog.
@@ -37,7 +37,7 @@ Each weekly game stores `opponent_abbreviation`. The page uses that key to load 
 To generate and save a fresh independent digit order for both axes, run:
 
 ```sh
-python3 scripts/generate_week.py 2025-02
+python3 scripts/generate_week.py 2026-02
 ```
 
 Pass the archive ID for the week you want to update. The page will keep using that saved order on every refresh.
@@ -48,7 +48,7 @@ To add another week:
 2. Copy the week JSON, update its matchup, digit arrays, pool path, and score ID.
 3. Add the new week JSON to `data/weeks/index.json`.
 
-The archive sorts entries by `game_date`. `/weekly-pool` always opens the newest entry automatically, while `?week=2025-01` and the on-page controls open a specific saved week.
+The archive sorts entries by `game_date`. `/weekly-pool` always opens the newest entry automatically, while `?week=2026-01` and the on-page controls open a specific saved week. The 2026 schedule includes all 17 games; Week 10 is omitted because it is the Eagles' bye week. Week 18 uses a temporary sort date and displays “Date and time TBD” until the NFL announces the kickoff.
 
 ### Replacing the test score source
 

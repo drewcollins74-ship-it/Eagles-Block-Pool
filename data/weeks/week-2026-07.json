@@ -1,0 +1,35 @@
+{
+  "week": 7,
+  "opponent": "Dallas Cowboys",
+  "opponent_short": "Cowboys",
+  "opponent_abbreviation": "DAL",
+  "game_date": "2026-10-26T20:15:00-04:00",
+  "location": "Lincoln Financial Field",
+  "eagles_digits": [
+    8,
+    0,
+    7,
+    2,
+    4,
+    9,
+    1,
+    6,
+    5,
+    3
+  ],
+  "opponent_digits": [
+    8,
+    3,
+    0,
+    2,
+    7,
+    1,
+    4,
+    9,
+    6,
+    5
+  ],
+  "digits_generated_at": "2026-06-30T14:00:00.000Z",
+  "pool_file": "/data/pools/pool-2026-07.csv",
+  "score_source_id": "2026-W07-PHI-DAL"
+}

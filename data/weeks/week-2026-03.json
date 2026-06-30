@@ -1,0 +1,35 @@
+{
+  "week": 3,
+  "opponent": "Chicago Bears",
+  "opponent_short": "Bears",
+  "opponent_abbreviation": "CHI",
+  "game_date": "2026-09-28T20:15:00-04:00",
+  "location": "Soldier Field",
+  "eagles_digits": [
+    7,
+    8,
+    3,
+    6,
+    5,
+    1,
+    0,
+    2,
+    4,
+    9
+  ],
+  "opponent_digits": [
+    9,
+    3,
+    4,
+    2,
+    5,
+    8,
+    0,
+    6,
+    7,
+    1
+  ],
+  "digits_generated_at": "2026-06-30T14:00:00.000Z",
+  "pool_file": "/data/pools/pool-2026-03.csv",
+  "score_source_id": "2026-W03-PHI-CHI"
+}

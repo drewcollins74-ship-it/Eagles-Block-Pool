@@ -199,7 +199,8 @@ async function initialize() {
 
     const winner = getWinner(week, score, squares);
     document.querySelector("#page-title").textContent = `Week ${week.week} – Eagles vs. ${week.opponent_short}`;
-    document.querySelector("[data-game-meta]").textContent = `${formatGameDate(week.game_date)} · ${week.location}`;
+    const gameDateLabel = week.date_tbd ? "Date and time TBD" : formatGameDate(week.game_date);
+    document.querySelector("[data-game-meta]").textContent = `${gameDateLabel} · ${week.location}`;
     renderScore(document.querySelector("[data-score-strip]"), score, winner, week.opponent_short);
     renderGrid(document.querySelector("[data-pool-grid]"), week, squares, winner);
   } catch (error) {

@@ -1,0 +1,35 @@
+{
+  "week": 13,
+  "opponent": "Arizona Cardinals",
+  "opponent_short": "Cardinals",
+  "opponent_abbreviation": "ARI",
+  "game_date": "2026-12-06T16:05:00-05:00",
+  "location": "State Farm Stadium",
+  "eagles_digits": [
+    8,
+    6,
+    4,
+    9,
+    7,
+    0,
+    5,
+    2,
+    3,
+    1
+  ],
+  "opponent_digits": [
+    9,
+    4,
+    7,
+    8,
+    3,
+    2,
+    1,
+    0,
+    5,
+    6
+  ],
+  "digits_generated_at": "2026-06-30T14:00:00.000Z",
+  "pool_file": "/data/pools/pool-2026-13.csv",
+  "score_source_id": "2026-W13-PHI-ARI"
+}

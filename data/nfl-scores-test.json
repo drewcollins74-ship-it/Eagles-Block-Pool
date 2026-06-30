@@ -1,7 +1,5 @@
 {
   "source": "local-test-data",
-  "reference_url": "https://www.philadelphiaeagles.com/schedule/2025/",
-  "season": 2025,
   "games": [
     {
       "id": "2025-W01-PHI-DAL",
@@ -155,6 +153,167 @@
       "eagles_score": null,
       "opponent_score": null,
       "status": "scheduled"
+    },
+    {
+      "id": "2026-W01-PHI-WAS",
+      "week": 1,
+      "game_date": "2026-09-13T16:25:00-04:00",
+      "opponent": "Washington Commanders",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2026-W02-PHI-TEN",
+      "week": 2,
+      "game_date": "2026-09-20T13:00:00-04:00",
+      "opponent": "Tennessee Titans",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2026-W03-PHI-CHI",
+      "week": 3,
+      "game_date": "2026-09-28T20:15:00-04:00",
+      "opponent": "Chicago Bears",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2026-W04-PHI-LAR",
+      "week": 4,
+      "game_date": "2026-10-04T13:00:00-04:00",
+      "opponent": "Los Angeles Rams",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2026-W05-PHI-JAX",
+      "week": 5,
+      "game_date": "2026-10-11T09:30:00-04:00",
+      "opponent": "Jacksonville Jaguars",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2026-W06-PHI-CAR",
+      "week": 6,
+      "game_date": "2026-10-18T13:00:00-04:00",
+      "opponent": "Carolina Panthers",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2026-W07-PHI-DAL",
+      "week": 7,
+      "game_date": "2026-10-26T20:15:00-04:00",
+      "opponent": "Dallas Cowboys",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2026-W08-PHI-WAS",
+      "week": 8,
+      "game_date": "2026-11-01T20:20:00-05:00",
+      "opponent": "Washington Commanders",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2026-W09-PHI-NYG",
+      "week": 9,
+      "game_date": "2026-11-08T13:00:00-05:00",
+      "opponent": "New York Giants",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2026-W11-PHI-PIT",
+      "week": 11,
+      "game_date": "2026-11-22T16:25:00-05:00",
+      "opponent": "Pittsburgh Steelers",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2026-W12-PHI-DAL",
+      "week": 12,
+      "game_date": "2026-11-26T16:30:00-05:00",
+      "opponent": "Dallas Cowboys",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2026-W13-PHI-ARI",
+      "week": 13,
+      "game_date": "2026-12-06T16:05:00-05:00",
+      "opponent": "Arizona Cardinals",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2026-W14-PHI-IND",
+      "week": 14,
+      "game_date": "2026-12-13T13:00:00-05:00",
+      "opponent": "Indianapolis Colts",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2026-W15-PHI-SEA",
+      "week": 15,
+      "game_date": "2026-12-19T17:00:00-05:00",
+      "opponent": "Seattle Seahawks",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2026-W16-PHI-HOU",
+      "week": 16,
+      "game_date": "2026-12-24T20:15:00-05:00",
+      "opponent": "Houston Texans",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2026-W17-PHI-SF",
+      "week": 17,
+      "game_date": "2027-01-03T20:20:00-05:00",
+      "opponent": "San Francisco 49ers",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2026-W18-PHI-NYG",
+      "week": 18,
+      "game_date": "2027-01-10T13:00:00-05:00",
+      "opponent": "New York Giants",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
     }
+  ],
+  "seasons": [
+    2025,
+    2026
+  ],
+  "reference_urls": [
+    "https://www.philadelphiaeagles.com/schedule/2025/",
+    "https://www.philadelphiaeagles.com/news/eagles-schedule-release-2026"
   ]
 }

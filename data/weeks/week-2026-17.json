@@ -1,0 +1,35 @@
+{
+  "week": 17,
+  "opponent": "San Francisco 49ers",
+  "opponent_short": "49ers",
+  "opponent_abbreviation": "SF",
+  "game_date": "2027-01-03T20:20:00-05:00",
+  "location": "Levi's Stadium",
+  "eagles_digits": [
+    2,
+    3,
+    9,
+    0,
+    1,
+    6,
+    7,
+    5,
+    8,
+    4
+  ],
+  "opponent_digits": [
+    4,
+    8,
+    6,
+    7,
+    9,
+    0,
+    2,
+    5,
+    1,
+    3
+  ],
+  "digits_generated_at": "2026-06-30T14:00:00.000Z",
+  "pool_file": "/data/pools/pool-2026-17.csv",
+  "score_source_id": "2026-W17-PHI-SF"
+}

@@ -1,0 +1,35 @@
+{
+  "week": 1,
+  "opponent": "Washington Commanders",
+  "opponent_short": "Commanders",
+  "opponent_abbreviation": "WAS",
+  "game_date": "2026-09-13T16:25:00-04:00",
+  "location": "Lincoln Financial Field",
+  "eagles_digits": [
+    9,
+    4,
+    1,
+    0,
+    2,
+    5,
+    8,
+    3,
+    7,
+    6
+  ],
+  "opponent_digits": [
+    3,
+    6,
+    2,
+    1,
+    8,
+    9,
+    0,
+    5,
+    4,
+    7
+  ],
+  "digits_generated_at": "2026-06-30T14:00:00.000Z",
+  "pool_file": "/data/pools/pool-2026-01.csv",
+  "score_source_id": "2026-W01-PHI-WAS"
+}
