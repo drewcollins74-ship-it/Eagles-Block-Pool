@@ -5,10 +5,21 @@ import { LocalScoreAdapter } from "./score-adapter.js";
 // repository subpath (for example GitHub Pages) load the same files.
 const siteRootUrl = new URL("../", import.meta.url);
 const siteUrl = (path) => new URL(path.replace(/^\//, ""), siteRootUrl).href;
-const fetchFresh = (url) => fetch(url, { cache: "no-store" });
-const weeksIndexUrl = siteUrl("data/weeks/index.json");
-const teamsUrl = siteUrl("data/teams.json");
-const scoreAdapter = new LocalScoreAdapter(siteUrl("data/nfl-scores-test.json"));
+// Give every page load a unique cache key. GitHub Pages and Safari may both
+// retain static files briefly, so no-store alone is not always enough.
+const pageVersion = Date.now().toString(36);
+const freshUrl = (path) => {
+  const url = new URL(path.replace(/^\//, ""), siteRootUrl);
+  url.searchParams.set("v", pageVersion);
+  return url.href;
+};
+const fetchFresh = (url) => fetch(url, {
+  cache: "no-store",
+  headers: { "Cache-Control": "no-cache" }
+});
+const weeksIndexUrl = freshUrl("data/weeks/index.json");
+const teamsUrl = freshUrl("data/teams.json");
+const scoreAdapter = new LocalScoreAdapter(freshUrl("data/nfl-scores-test.json"));
 
 function parseCsv(csv) {
   const [headerLine, ...lines] = csv.trim().split(/\r?\n/);
@@ -33,6 +44,7 @@ function formatGameDate(value) {
 function weekHref(weekId) {
   const url = new URL("weekly-pool/", siteRootUrl);
   url.searchParams.set("week", weekId);
+  url.searchParams.set("v", pageVersion);
   return url.href;
 }
 
@@ -168,7 +180,7 @@ async function initialize() {
     const activeWeek = weeks[activeIndex];
     renderWeekSwitcher(document.querySelector("[data-week-switcher]"), weeks, activeIndex);
 
-    const weekResponse = await fetchFresh(siteUrl(activeWeek.file));
+    const weekResponse = await fetchFresh(freshUrl(activeWeek.file));
     if (!weekResponse.ok) throw new Error("Week data could not be loaded.");
     const savedWeek = await weekResponse.json();
     const opponent = teams[savedWeek.opponent_abbreviation]
@@ -189,7 +201,7 @@ async function initialize() {
     renderOpponentMark(document.querySelector("[data-opponent-mark]"), opponent);
 
     const [poolResponse, score] = await Promise.all([
-      fetchFresh(siteUrl(week.pool_file)),
+      fetchFresh(freshUrl(week.pool_file)),
       scoreAdapter.getGameById(week.score_source_id)
     ]);
     if (!poolResponse.ok) throw new Error("Pool data could not be loaded.");

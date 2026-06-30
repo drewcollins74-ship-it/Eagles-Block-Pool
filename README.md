@@ -50,6 +50,8 @@ To add another week:
 
 The archive sorts entries by `game_date`. `/weekly-pool` always opens the newest entry automatically, while `?week=2026-01` and the on-page controls open a specific saved week. The 2026 schedule includes all 17 games; Week 10 is omitted because it is the Eagles' bye week. Week 18 uses a temporary sort date and displays “Date and time TBD” until the NFL announces the kickoff.
 
+The page adds a unique cache key to its scripts, styles, and data requests on every visit. This prevents Safari and GitHub Pages from continuing to display a previously deployed schedule.
+
 ### Replacing the test score source
 
 The UI calls only `getGameById(scoreSourceId)` on the adapter in `src/score-adapter.js`. A future live NFL adapter can fetch an API, normalize its response to the current game shape (`eagles_score`, `opponent_score`, and `status`), and replace the `LocalScoreAdapter` import in `src/app.js`. The grid and winner logic do not need to change.

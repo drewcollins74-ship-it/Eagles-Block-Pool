@@ -1,10 +1,11 @@
 const siteRootUrl = new URL("../", import.meta.url);
-const weeklyPoolUrl = new URL("weekly-pool/", siteRootUrl).href;
+const weeklyPoolUrl = new URL("weekly-pool/", siteRootUrl);
+weeklyPoolUrl.searchParams.set("v", Date.now().toString(36));
 const teamLogoUrl = new URL("assets/team-mac-attack-logo.svg", siteRootUrl).href;
 
 export function renderHeader(target) {
   target.innerHTML = `
-    <a class="brand" href="${weeklyPoolUrl}" aria-label="Eagles Block Pool home">
+    <a class="brand" href="${weeklyPoolUrl.href}" aria-label="Eagles Block Pool home">
       <img src="${teamLogoUrl}" alt="Team Mac Attack" />
       <span><b>Eagles</b> Block Pool</span>
     </a>
@@ -12,7 +13,7 @@ export function renderHeader(target) {
     <nav id="site-nav" class="site-nav" aria-label="Main navigation">
       <a href="#pool-board">The Pool</a>
       <a href="#how-it-works">How It Works</a>
-      <a class="site-nav__active" href="${weeklyPoolUrl}" aria-current="page">Weekly Pool</a>
+      <a class="site-nav__active" href="${weeklyPoolUrl.href}" aria-current="page">Weekly Pool</a>
       <a href="#support">Support the Cause</a>
       <a class="donate-button" href="#payment"><span aria-hidden="true">♥</span> Donate</a>
     </nav>`;
