@@ -2,10 +2,11 @@ const siteRootUrl = new URL("../", import.meta.url);
 const weeklyPoolUrl = new URL("weekly-pool/", siteRootUrl);
 weeklyPoolUrl.searchParams.set("v", Date.now().toString(36));
 const teamLogoUrl = new URL("assets/team-mac-attack-logo.svg", siteRootUrl).href;
+const fundraiserUrl = "https://events.nationalmssociety.org/teams/MacAttack";
 
 export function renderHeader(target) {
   target.innerHTML = `
-    <a class="brand" href="${weeklyPoolUrl.href}" aria-label="Eagles Block Pool home">
+    <a class="brand" href="${fundraiserUrl}" aria-label="Visit Team Mac Attack on the National MS Society website">
       <img src="${teamLogoUrl}" alt="Team Mac Attack" />
       <span><b>Eagles</b> Block Pool</span>
     </a>
