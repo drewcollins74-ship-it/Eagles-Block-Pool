@@ -26,7 +26,7 @@ Then open `http://localhost:4173/weekly-pool`.
 ### Weekly data
 
 - `data/pools/` contains a saved 100-square board for every game week.
-- `data/weeks/index.json` lists the 2025 and 2026 seasons and drives archive navigation.
+- `data/weeks/index.json` lists the 2026 season and drives weekly navigation.
 - `data/weeks/week-2026-01.json` contains the matchup, saved digit order, pool path, and score lookup ID for the 2026 opener.
 - `data/nfl-scores-test.json` is the replaceable local score source.
 - `data/teams.json` is the 32-team lookup keyed by NFL abbreviation.

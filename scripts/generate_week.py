@@ -7,7 +7,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-week_id = sys.argv[1] if len(sys.argv) > 1 else "2025-01"
+week_id = sys.argv[1] if len(sys.argv) > 1 else "2026-01"
 WEEK_PATH = Path(__file__).parent.parent / "data" / "weeks" / f"week-{week_id}.json"
 
 if not WEEK_PATH.exists():
