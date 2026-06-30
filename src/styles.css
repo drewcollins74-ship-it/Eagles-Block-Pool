@@ -36,33 +36,25 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-header {
   position: relative;
   z-index: 5;
-  min-height: 82px;
+  min-height: 96px;
   padding: 10px clamp(20px, 4vw, 68px);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 28px;
-  background: rgba(255,255,255,.97);
+  background: linear-gradient(110deg, var(--orange) 0 25%, #6134bc 25% 50%, #0c58c7 50% 75%, var(--green) 75% 100%);
   border-bottom: 1px solid #dce1df;
 }
 
-.site-header::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 22px;
-  background: linear-gradient(150deg, var(--orange) 0 28%, #6134bc 29% 52%, #0c58c7 53% 72%, var(--green) 73%);
-}
-
-.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; font-size: 18px; white-space: nowrap; }
-.brand img { width: 118px; height: 60px; object-fit: contain; }
+.brand { display: flex; align-items: center; gap: 14px; color: white; font-size: 18px; white-space: nowrap; text-shadow: 0 1px 3px rgba(0,0,0,.28); }
+.brand img { width: 145px; height: 74px; object-fit: contain; }
 .brand span { display: grid; line-height: 1.05; text-transform: uppercase; font-weight: 600; letter-spacing: .04em; }
 .brand b { font: 900 25px/1 "Arial Narrow", Impact, sans-serif; letter-spacing: .02em; }
 
-.site-nav { display: flex; align-items: center; gap: clamp(18px, 3.5vw, 54px); font-weight: 700; color: #102453; }
+.site-nav { display: flex; align-items: center; gap: clamp(18px, 3.5vw, 54px); font-weight: 700; color: white; }
 .site-nav a { text-decoration: none; padding: 12px 4px; white-space: nowrap; }
-.site-nav a:hover { color: var(--green); }
-.site-nav__active { border: 2px solid #1452f4; border-radius: 9px; padding-inline: 18px !important; color: #1452f4; }
+.site-nav a:hover { color: white; opacity: .82; }
+.site-nav__active { border: 2px solid white; border-radius: 9px; padding-inline: 18px !important; color: white; }
 .site-nav .donate-button { padding: 13px 20px; border-radius: 9px; color: white; background: var(--orange); text-transform: uppercase; font-size: 18px; box-shadow: 0 8px 24px rgba(255,75,22,.18); }
 .site-nav .donate-button:hover { color: white; background: #dd3609; }
 .nav-toggle { display: none; border: 1px solid var(--line); background: white; border-radius: 7px; padding: 9px 12px; font: inherit; font-weight: 700; }
@@ -141,10 +133,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 @media (max-width: 760px) {
-  .site-header { min-height: 68px; padding: 6px 18px 6px 30px; }
-  .brand img { width: 95px; height: 52px; }
+  .site-header { min-height: 78px; padding: 6px 18px; }
+  .brand img { width: 112px; height: 62px; }
   .nav-toggle { display: block; }
-  .site-nav { position: absolute; top: 100%; left: 0; right: 0; display: none; padding: 14px 20px 22px; flex-direction: column; align-items: stretch; gap: 2px; background: white; border-bottom: 1px solid var(--line); box-shadow: 0 12px 24px rgba(4,31,44,.13); }
+  .site-nav { position: absolute; top: 100%; left: 0; right: 0; display: none; padding: 14px 20px 22px; flex-direction: column; align-items: stretch; gap: 2px; color: var(--navy); background: white; border-bottom: 1px solid var(--line); box-shadow: 0 12px 24px rgba(4,31,44,.13); }
+  .site-nav a:hover { color: var(--green); opacity: 1; }
+  .site-nav__active { color: #1452f4; border-color: #1452f4; }
   .site-nav--open { display: flex; }
   .site-nav__active { text-align: center; }
   .site-nav .donate-button { text-align: center; }
