@@ -1,0 +1,160 @@
+{
+  "source": "local-test-data",
+  "reference_url": "https://www.philadelphiaeagles.com/schedule/2025/",
+  "season": 2025,
+  "games": [
+    {
+      "id": "2025-W01-PHI-DAL",
+      "week": 1,
+      "game_date": "2025-09-04T20:20:00-04:00",
+      "opponent": "Dallas Cowboys",
+      "eagles_score": 24,
+      "opponent_score": 20,
+      "status": "final"
+    },
+    {
+      "id": "2025-W02-PHI-KC",
+      "week": 2,
+      "game_date": "2025-09-14T16:25:00-04:00",
+      "opponent": "Kansas City Chiefs",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2025-W03-PHI-LAR",
+      "week": 3,
+      "game_date": "2025-09-21T13:00:00-04:00",
+      "opponent": "Los Angeles Rams",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2025-W04-PHI-TB",
+      "week": 4,
+      "game_date": "2025-09-28T13:00:00-04:00",
+      "opponent": "Tampa Bay Buccaneers",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2025-W05-PHI-DEN",
+      "week": 5,
+      "game_date": "2025-10-05T13:00:00-04:00",
+      "opponent": "Denver Broncos",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2025-W06-PHI-NYG",
+      "week": 6,
+      "game_date": "2025-10-09T20:15:00-04:00",
+      "opponent": "New York Giants",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2025-W07-PHI-MIN",
+      "week": 7,
+      "game_date": "2025-10-19T13:00:00-04:00",
+      "opponent": "Minnesota Vikings",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2025-W08-PHI-NYG",
+      "week": 8,
+      "game_date": "2025-10-26T13:00:00-04:00",
+      "opponent": "New York Giants",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2025-W10-PHI-GB",
+      "week": 10,
+      "game_date": "2025-11-10T20:15:00-05:00",
+      "opponent": "Green Bay Packers",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2025-W11-PHI-DET",
+      "week": 11,
+      "game_date": "2025-11-16T20:20:00-05:00",
+      "opponent": "Detroit Lions",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2025-W12-PHI-DAL",
+      "week": 12,
+      "game_date": "2025-11-23T16:25:00-05:00",
+      "opponent": "Dallas Cowboys",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2025-W13-PHI-CHI",
+      "week": 13,
+      "game_date": "2025-11-28T15:00:00-05:00",
+      "opponent": "Chicago Bears",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2025-W14-PHI-LAC",
+      "week": 14,
+      "game_date": "2025-12-08T20:15:00-05:00",
+      "opponent": "Los Angeles Chargers",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2025-W15-PHI-LV",
+      "week": 15,
+      "game_date": "2025-12-14T13:00:00-05:00",
+      "opponent": "Las Vegas Raiders",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2025-W16-PHI-WAS",
+      "week": 16,
+      "game_date": "2025-12-20T17:00:00-05:00",
+      "opponent": "Washington Commanders",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2025-W17-PHI-BUF",
+      "week": 17,
+      "game_date": "2025-12-28T16:25:00-05:00",
+      "opponent": "Buffalo Bills",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "2025-W18-PHI-WAS",
+      "week": 18,
+      "game_date": "2026-01-04T16:25:00-05:00",
+      "opponent": "Washington Commanders",
+      "eagles_score": null,
+      "opponent_score": null,
+      "status": "scheduled"
+    }
+  ]
+}

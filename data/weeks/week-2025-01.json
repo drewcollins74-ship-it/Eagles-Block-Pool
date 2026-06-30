@@ -1,0 +1,35 @@
+{
+  "week": 1,
+  "opponent": "Dallas Cowboys",
+  "opponent_short": "Cowboys",
+  "opponent_abbreviation": "DAL",
+  "game_date": "2025-09-04T20:20:00-04:00",
+  "location": "Lincoln Financial Field",
+  "eagles_digits": [
+    1,
+    2,
+    8,
+    3,
+    0,
+    9,
+    5,
+    6,
+    7,
+    4
+  ],
+  "opponent_digits": [
+    5,
+    7,
+    4,
+    3,
+    8,
+    6,
+    1,
+    0,
+    9,
+    2
+  ],
+  "digits_generated_at": "2026-06-30T01:04:17.153271+00:00",
+  "pool_file": "/data/pools/pool-2025-01.csv",
+  "score_source_id": "2025-W01-PHI-DAL"
+}

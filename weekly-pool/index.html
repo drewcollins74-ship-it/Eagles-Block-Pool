@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="description" content="The current Eagles Block Pool weekly grid and game score." />
+    <title>Weekly Pool | Eagles Block Pool</title>
+    <link rel="stylesheet" href="../src/styles.css?v=4" />
+  </head>
+  <body>
+    <header class="site-header" data-site-header></header>
+
+    <main>
+      <section class="matchup" aria-labelledby="page-title">
+        <div class="matchup__eyebrow">The weekly board</div>
+        <div class="matchup__title-row">
+          <span class="team-mark team-mark--eagles" aria-hidden="true">EB</span>
+          <div>
+            <h1 id="page-title">Loading weekly pool…</h1>
+            <p class="matchup__meta" data-game-meta></p>
+          </div>
+          <span class="team-mark team-mark--opponent" data-opponent-mark aria-hidden="true"></span>
+        </div>
+      </section>
+
+      <section class="pool-layout" aria-label="Weekly block pool">
+        <nav class="week-switcher" data-week-switcher aria-label="Choose a weekly pool"></nav>
+
+        <div class="board-panel">
+          <div class="score-strip" data-score-strip aria-live="polite">
+            <span class="status-pill">Loading score</span>
+          </div>
+
+          <div class="board-scroll" tabindex="0" aria-label="Scrollable 10 by 10 pool board">
+            <table class="pool-grid" data-pool-grid>
+              <caption class="sr-only">Eagles Block Pool participant grid</caption>
+            </table>
+          </div>
+          <p class="scroll-hint">Swipe or scroll sideways to see the full board on a small screen.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-site-footer></footer>
+    <script type="module" src="../src/app.js?v=5"></script>
+  </body>
+</html>

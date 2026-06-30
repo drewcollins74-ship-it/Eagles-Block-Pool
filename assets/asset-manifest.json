@@ -23,6 +23,12 @@
       "purpose": "Venmo-style payment icon",
       "status": "available",
       "source": "simple SVG icon"
+    },
+    {
+      "path": "assets/teams/*.svg",
+      "purpose": "Local color-coded badge for each NFL team, named by lowercase abbreviation",
+      "status": "available",
+      "source": "project-generated replacement-safe SVG badges"
     }
   ],
   "designReferencesNeeded": [
