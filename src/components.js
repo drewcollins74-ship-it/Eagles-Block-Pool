@@ -1,13 +1,15 @@
 const siteRootUrl = new URL("../", import.meta.url);
+const assetVersion = new URL(import.meta.url).searchParams.get("v") ?? Date.now().toString(36);
 const weeklyPoolUrl = new URL("weekly-pool/", siteRootUrl);
 weeklyPoolUrl.searchParams.set("v", Date.now().toString(36));
-const teamLogoUrl = new URL("assets/team-mac-attack-logo.png", siteRootUrl).href;
+const teamLogoUrl = new URL("assets/team-mac-attack-logo.png", siteRootUrl);
+teamLogoUrl.searchParams.set("v", assetVersion);
 const fundraiserUrl = "https://events.nationalmssociety.org/teams/MacAttack";
 
 export function renderHeader(target) {
   target.innerHTML = `
     <div class="brand">
-      <img src="${teamLogoUrl}" alt="Team Mac Attack" />
+      <img src="${teamLogoUrl.href}" alt="Team Mac Attack" />
       <span><b>Eagles</b> Block Pool</span>
     </div>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -31,7 +33,7 @@ export function renderHeader(target) {
 export function renderFooter(target) {
   target.innerHTML = `
     <div class="footer-brand">
-      <img src="${teamLogoUrl}" alt="Team Mac Attack" />
+      <img src="${teamLogoUrl.href}" alt="Team Mac Attack" />
       <span>All proceeds benefit the National MS Society.</span>
     </div>
     <div class="footer-links">
