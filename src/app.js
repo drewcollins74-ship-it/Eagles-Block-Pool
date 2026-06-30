@@ -1,5 +1,10 @@
-import { renderFooter, renderHeader } from "./components.js";
-import { LocalScoreAdapter } from "./score-adapter.js";
+// Carry the page's cache key into imported modules too. Without this, Safari
+// or the GitHub Pages CDN can serve an old components.js under a fresh app.js.
+const moduleVersion = new URL(import.meta.url).searchParams.get("v") ?? Date.now().toString(36);
+const [{ renderFooter, renderHeader }, { LocalScoreAdapter }] = await Promise.all([
+  import(`./components.js?v=${moduleVersion}`),
+  import(`./score-adapter.js?v=${moduleVersion}`)
+]);
 
 // Resolve from this module instead of the domain root so localhost and a
 // repository subpath (for example GitHub Pages) load the same files.
