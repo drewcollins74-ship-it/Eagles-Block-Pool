@@ -3,6 +3,7 @@ const weeklyPoolUrl = new URL("weekly-pool/", siteRootUrl);
 weeklyPoolUrl.searchParams.set("v", Date.now().toString(36));
 const teamLogoUrl = new URL("assets/team-mac-attack-logo.svg", siteRootUrl).href;
 const fundraiserUrl = "https://events.nationalmssociety.org/teams/MacAttack";
+const teamDonationUrl = `${fundraiserUrl}#btnDonateToteam`;
 
 export function renderHeader(target) {
   target.innerHTML = `
@@ -16,7 +17,7 @@ export function renderHeader(target) {
       <a href="#how-it-works">How It Works</a>
       <a class="site-nav__active" href="${weeklyPoolUrl.href}" aria-current="page">Weekly Pool</a>
       <a href="#support">Support the Cause</a>
-      <a class="donate-button" href="#payment"><span aria-hidden="true">♥</span> Donate</a>
+      <a class="donate-button" href="${teamDonationUrl}" aria-label="Donate to Team Mac Attack"><span aria-hidden="true">♥</span> Donate</a>
     </nav>`;
 
   const toggle = target.querySelector(".nav-toggle");
